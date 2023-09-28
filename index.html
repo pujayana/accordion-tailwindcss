@@ -32,6 +32,11 @@
                 fontFamily: {
                     inter: ['Inter'],
                 },
+                extend: {
+                    transitionDuration: {
+                        DEFAULT: '400ms',
+                    },
+                }
             },
         }
     </script>
@@ -39,7 +44,61 @@
 
 <body>
 
-    
+    <div class="w-full p-10 bg-slate-300" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+        <!-- accordion-1 -->
+        <div class="relative bg-orange-500 w-full overflow-hidden">
+            <input type="checkbox" id="faq1" name="faq" class="peer absolute w-full h-full appearance-none hidden">
+            <label for="faq1" class="flex items-center relative w-full py-4 cursor-pointer bg-red-500 z-10">
+                <h4 class="text-sm font-semibold">Educations and International Certifications</h4>
+            </label>
+            <span class="absolute z-10 top-3 right-0 transition-all ease-in-out after:content-['+'] peer-checked:after:content-['-']"></span>
+            <div class="overflow-hidden transition-all ease-in-out max-h-[0px] peer-checked:max-h-[1000px]">
+                <div>
+                    <ul class="list-disc pl-4">
+                        <li class="mt-2 text-sm">PhD in Human Resource Management and Organizational Behaviour (University of Glasgow, UK) (cand.)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- accordion-2 -->
+        <div class="relative bg-orange-500 w-full overflow-hidden mt-4">
+            <input type="checkbox" id="faq2" name="faq" class="peer absolute w-full h-full appearance-none hidden">
+            <label for="faq2" class="flex items-center relative w-full py-4 cursor-pointer bg-red-500 z-10">
+                <h4 class="text-sm font-semibold">Educations and International Certifications</h4>
+            </label>
+            <span class="absolute z-10 top-3 right-0 transition-all ease-in-out after:content-['+'] peer-checked:after:content-['-']"></span>
+            <div class="overflow-hidden transition-all ease-in-out max-h-[0px] peer-checked:max-h-[1000px]">
+                <div>
+                    <ul class="list-disc pl-4">
+                        <li class="mt-2 text-sm">PhD in Human Resource Management and Organizational Behaviour (University of Glasgow, UK) (cand.)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- accordion-3 -->
+        <div class="relative bg-orange-500 w-full overflow-hidden mt-4">
+            <input type="checkbox" id="faq3" name="faq" class="peer absolute w-full h-full appearance-none hidden">
+            <label for="faq3" class="flex items-center relative w-full py-4 cursor-pointer bg-red-500 z-10">
+                <h4 class="text-sm font-semibold">Educations and International Certifications</h4>
+            </label>
+            <span class="absolute z-10 top-3 right-0 transition-all ease-in-out after:content-['+'] peer-checked:after:content-['-']"></span>
+            <div class="overflow-hidden transition-all ease-in-out max-h-[0px] peer-checked:max-h-[1000px]">
+                <div>
+                    <ul class="list-disc pl-4">
+                        <li class="mt-2 text-sm">PhD in Human Resource Management and Organizational Behaviour (University of Glasgow, UK) (cand.)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                        <li class="mt-2 text-sm">MBA in Strategic Marketing (University of Nicosia, Cyprus)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
 </body>
 
